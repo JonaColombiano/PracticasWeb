@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Posicionamiento</title>
+    <link rel="stylesheet" href="../../Css/estilos.css">
+</head>
+<body>
+    <header class="Hfondo" style="background-color: rgba(255, 211, 42,.85)">
+            <nav>
+                <ul class="indice">
+                   <li class="indice"><a href="../../index.html" class="quitHiper">Inicio</a></li>
+                    <li class="indice"> <a href="../CSS3.html" class="quitHiper">CSS3</a> </li>
+                    <li class="indice"> <a href="../Boostrap.html" class="quitHiper">Boostrap</a> </li>
+                    <li class="indice"> <a href="../javascript.html" class="quitHiper">Javascript</a> </li>
+                </ul>
+           </nav>
+            <div class="Hcontenedor">
+               <img src="../Imagenes/logocss.png" alt="" class="logo"> <span><h1 class="Titulo">CSS3</h1></span>
+            </div>
+    </header>
+    <div class="main">
+        <section class="lateral">
+            <ul>
+                <h2>Categorias</h2>
+                <a href="backgroundblend.html"><li>Backgraund-blend-mode</li></a>
+                <a href="boxshadow.html"><li>Box-shadow</li></a>
+                <a href="CtrHorizontal.html"><li>Centrar Horizonalmete</li></a>
+                <a href="CtrVertical.html"><li>Centrar Verticalmente</li></a>
+                <a href="display.html"><li>Display</li></a>
+                <a href="query.html"><li>Media Querys</li></a>
+                <a href="overflow.html"><li>Overflow</li></a>
+                <a href="position.html"><li>Position</li></a>
+                <a href="transition.html"><li>transition</li></a>
+                <a href="trasform.html"><li>Transform</li></a>
+            </ul>
+        </section>
+        <section class="lateral2">
+            <h2>Posicionamiento</h2>
+                <p>Para poder tener estructuras mas complejas, tenemos que discutir la propiedad position (posición). Esta propiedad tiene un montón de posibles valores, sus nombres no tienen sentido y son casi imposibles de memorizar. Veámoslos uno a uno, pero antes deberías guardar esta página en tus marcadores para futuras referencias.</p>
+            <br>
+            <h2>Static</h2>
+            <div class="static">
+                <p>static (estático) es el valor por defecto. Un elemento con position: static; no está posicionado en ninguna forma en específico. Se dice que un elemento static, está no posicionado y un elemento con valor establecido de position está posicionado. NOTA: Permite centrar el div verticalmente con margin:auto</p>
+            </div>
+            <br>
+            <h2>Relative</h2>
+            <div class="relative1">
+               <p>relative (relativo) se comporta de la misma manera que static a menos que le agregues otras propiedades</p>
+            </div>
+            <div class="relative2">
+               <p>Establecer las propiedades top, right, bottom, y left de un elemento con position: relative; causará que su posición normal se reajuste. Otro contenido no se puede ajustar para adaptarse a cualquier hueco dejado por el elemento. Nota: Este div tiene un top de -15px y un right de 20px </p>
+            </div>
+            <br>
+            <h2>Fixed</h2>
+            <p>Un elemento fixed (fijo) se posiciona a la ventana del navegador de manera relativa, lo que significa que se mantendrá en el mismo lugar incluso después de hacer scroll en la página. Al igual que con relative, las propiedades top, right, bottom, y left también son usadas.
+            Estoy seguro que ya notaste el elemento fijo en la parte de abajo a la derecha de la página. Te doy permiso de que lo veas ahora. 
+            <br><br>
+            Un elemento con valor fixed no deja espacio en el lugar de la página donde estaba ubicado normalmente. Los buscadores móviles, sorprendentemente, no tienen muy buen soporte para el valor fixed.</p>
+            <div class="fixed">
+                <p>Hola soy un elemento fixed</p>
+            </div>
+            <br>
+            <h2>Absolute</h2>
+            <div class="relative3">
+                <p>Este elemento está usando position: relative;. Si estuviera usando position: static; su sucesor con position: asbsolute; escaparía y se posicionaría relativamente al body del documento.</p>
+                <div class="absolute">
+                    Este elemento tiene position: asbsolute;. Se posiciona de manera relativa a su ancestro.
+                </div>
+            </div>
+        </section>
+        <br><br><br>
+        
+    </div>
+  
+    <footer>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius aspernatur cumque quas eveniet neque consequatur voluptatem omnis, dolorum, iure dignissimos voluptates minus aut assumenda maxime deleniti, optio a itaque quos.
+    </footer>
+</body>
+</html>

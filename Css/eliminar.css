@@ -1,0 +1,20 @@
+.contenido{
+
+    width: 100%;
+}
+
+.content1{
+
+    background: red;
+    float: left;
+    width: 100px;
+    height: 100px;
+}
+
+.content2{
+
+    background: green;
+    float: left;
+    width: 100px;
+    height: 100px;
+}

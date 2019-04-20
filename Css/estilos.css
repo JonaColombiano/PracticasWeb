@@ -1,0 +1,327 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    -moz-box-sizing:border-box;
+}
+
+.quitHiper{
+    text-decoration: none;
+    color: white;
+    font-weight: 1000;
+}
+ 
+.indice{
+    display: inline-block;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: white;
+}
+nav{
+    position: absolute;
+    top: 15px;
+    right: 3%;;
+}
+.centrado{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color:white;
+    text-align: center;
+}
+
+.main{
+    padding: 0px 11%;
+    margin-top: 4%;
+    overflow: hidden;
+}
+
+p{
+    margin: 1% 0;
+    text-align: justify;
+    line-height: 30px;
+}
+
+a{
+    text-decoration: none;
+    color:#333333;
+}
+
+footer{
+    background: #333333;
+    width: 100%;
+    height: 300px;
+    color: white;
+    margin-top: 30px;
+
+}
+/*Css CSS3*/
+.Pendientes{
+    color: red;
+}
+
+.contenido{
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    margin-top: 60px;
+}
+
+.content{
+    width: 70%;
+    height: 90%;;
+    margin: auto;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+.content1{
+    float: left;
+    width: 50%;
+    height: 100%;
+    margin-left: 40;
+}
+
+
+.conticon{
+    
+    width: 100px;
+    height: 100px;
+    background: #f39c12;
+    margin: auto;
+    margin-bottom: 20px;
+    color:white;
+    text-align: center;
+    border-radius: 50%;
+    -moz-border-radius:50%;
+    overflow: hidden;
+}
+.icono{
+    padding-top:20px ;
+}
+
+.context{
+    text-align: justify;
+    color:#0f0f0f;
+    width: 100%;
+    height: 60%;
+    margin: auto;
+    padding: 0 5px;
+}
+
+.content:hover{
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -moz-transform:scale(1.05);
+    transition: all 0.9s ease;
+    -moz-transition: all 0.9s ease;
+    -webkit-transition:all 0.9s ease;
+    -webkit-box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.75);
+    -moz-box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.75);
+    box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.75);
+    cursor: pointer;
+    overflow: inherit;
+}
+
+/*Css temario css*/
+.lateral{
+    margin-top:50px;
+    width: 19%;
+    height: 500px;
+    float: left;
+}
+
+.lateral2{
+    margin-top: 50px;
+    float:left;
+    width: 80%;
+    height: auto;
+    padding-left: 4%;
+}
+
+.lateral ul h2{
+    text-align: center;
+    background: #f2f2f2;
+}
+
+.lateral ul li{
+    list-style: none;
+    padding: 5px 10px;
+}
+
+.lateral ul li:hover{
+    cursor: pointer;
+    background-color:#0e8eef; 
+}
+.static{
+    border: 3px solid; 
+    width: 70%;
+    border-color: cadetblue;
+    margin: auto;
+}
+
+.relative1{
+    position: relative;
+    border: 3px solid;
+    width: 70%;
+    border-color: cadetblue;
+    margin: auto;
+}
+
+.relative2{
+    position: relative;
+    border: 3px solid;
+    width: 70%;
+    border-color: salmon;
+    margin: auto;
+    top:-15px;
+    right: 20px;
+}
+
+.fixed{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    border: 3px solid;
+    border-color: #e5c32d;
+    background-color: #f71b38; 
+}
+
+.relative3{
+    position: relative;
+    width: 70%;
+    height: 300px;
+    border: 3px solid;
+    border-color: cadetblue;
+    margin: auto;
+    overflow: hidden;
+}
+
+.absolute{
+    position: absolute;
+    width: 30%;
+    border: 3px solid;
+    right: 0px;
+    top:100px;;  
+}
+
+.imagen{
+    width: 600px;
+    margin: auto;
+    height: 400px;
+    background-color:blue;
+        background-image: url(../Imagenes/imagenprueba.jpg);
+    background-size:600px 400px; 
+    background-blend-mode: luminosity;
+    margin-bottom: 20px;
+}
+
+.code{
+    background-color: #2b2b2b;
+    width: 80%;
+    height: 150px;
+    margin: auto;
+    margin-bottom: 20px;
+    color:white;
+    padding: 20px;
+    border-radius: 5px;
+    
+}
+.verde{
+    color: lawngreen;
+}
+.blue{
+    color: deepskyblue;
+}
+.morado{
+    color:mediumpurple;
+}
+/*Css Javascript*/
+.Hfondo{
+    position: fixed;
+    top:0;
+    background:rgba(230, 126, 34,0.85);
+    width: 100%;
+    height: 90px;
+    padding:0px 50px;
+    z-index: 200;
+}
+
+.Hcontenedor{
+    display: flex; /*Es mas facil alinear el texto horizontalmente*/
+    height: 100%;
+    align-items: center; /*Con esto lo alineas*/
+
+}
+.logo{
+    width: 70px;
+    margin-left: 4%;
+}
+
+.Titulo{
+    display: inline-block;
+    font-size: 350%;
+}
+
+.banner{
+    position: relative;
+    top:0;
+    width: 100%;
+
+}
+
+.bannerimg{
+    width: 100%;
+    height: 500px;
+    display: block;
+
+}
+
+.banner:before{
+    content:'';
+    position: absolute;
+    width: 100%;
+    height: 500px;
+    background: rgba(0,0,0,0.45);
+}
+
+.texbanner{
+    position: absolute;
+    color:white;
+    z-index: 1;
+}
+
+
+/* Css JavasCript 2 
+
+.Hfondo{
+    border: 1px solid;
+    position: relative;
+    background-color: coral;
+    width: 100%;
+    height: 100px;
+    padding-left: 50px;
+    padding-right: 50px;
+    box-sizing:border-box; 
+    -moz-box-sizing:border-box;
+    overflow: hidden;
+}
+
+.Hcontenedor{
+    position: absolute;
+    border: 1px solid;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.logo{
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    top:50%;
+    left: 8%;
+    transform: translate(0, -50%);
+}
+*/

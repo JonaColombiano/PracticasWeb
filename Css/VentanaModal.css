@@ -1,0 +1,64 @@
+body{
+    text-align: center;
+    font-family: sans-serif;
+    margin: 0px;
+}
+main{
+    position: absolute;
+}
+
+.modal{
+    position: absolute;
+    display: flex;  /*Ayuda a Centrar el contenido con margin auto*/
+    background-color: rgba(0,0,0,0.5);
+    width: 100%;
+    height: 100vh;
+    margin: auto;
+    z-index: 200;
+    animation: modal 1s;
+    animation-fill-mode: forwards;
+    visibility: hidden;
+    opacity: 0;
+
+}
+
+.contenido{
+    background: white;
+    width: 30%;
+    height: 40%;
+    margin: auto;
+    border-radius: 10px;
+    animation: modal 1s;  /*El primer valor es a que se le va a aplicar la animacion, el segundo el la duracion que tardara en aparecer, la tercera retraso de cuanto durara la animacion*/
+    animation-fill-mode: forwards;/*Con esto le decimos que se quede la animacion tal cual despues de que termine su tiempo*/
+    visibility: hidden;
+    opacity: 0;
+}
+
+.menucerrar{
+    position: relative;
+    background: rgb(0,0,0);
+    height: 10%;
+    color: white;
+    text-align: right;
+    padding-right: 2%;
+    border-radius: 10px 10px 0px 0px;
+}
+
+#cerrar + label{
+    cursor: pointer;
+}
+
+@keyframes modal{  /**/
+    100%{
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+.modal:target{  /*Cuando seleccionamos <a href="#cerrarmodal">X</a> enviamos acivamos el tarjet a modal*/
+    display: none;
+}
