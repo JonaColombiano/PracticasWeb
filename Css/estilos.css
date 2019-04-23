@@ -5,6 +5,9 @@
     -moz-box-sizing:border-box;
 }
 
+.centrartext{    
+text-align: center;
+}
 .quitHiper{
     text-decoration: none;
     color: white;
@@ -40,7 +43,7 @@ nav{
 p{
     margin: 1% 0;
     text-align: justify;
-    line-height: 30px;
+    line-height: 20px;
 }
 
 a{
