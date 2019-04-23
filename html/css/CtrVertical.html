@@ -1,0 +1,60 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Centrar Horizontalmente</title>
+    <link rel="stylesheet" href="../../Css/estilos.css">
+</head>
+<body>
+    <header class="Hfondo" style="background-color: rgba(255, 211, 42,.85)">
+            <nav>
+                <ul class="indice">
+                   <li class="indice"><a href="../../index.html" class="quitHiper">Inicio</a></li>
+                    <li class="indice"> <a href="../CSS3.html" class="quitHiper">CSS3</a> </li>
+                    <li class="indice"> <a href="../Boostrap.html" class="quitHiper">Boostrap</a> </li>
+                    <li class="indice"> <a href="../javascript.html" class="quitHiper">Javascript</a> </li>
+                </ul>
+           </nav>
+            <div class="Hcontenedor">
+               <img src="../../Imagenes/logocss.png" alt="" class="logo"> <span><h1 class="Titulo">CSS3</h1></span>
+            </div>
+    </header>
+    <div class="main">
+        <section class="lateral">
+            <ul>
+                <h2>Categorias</h2>
+                <a href="backgroundblend.html"><li>Backgraund-blend-mode</li></a>
+                <a href="boxshadow.html"><li>Box-shadow</li></a>
+                <a href="CtrHorizontal.html"><li>Centrar Horizonalmete</li></a>
+                <a href="CtrVertical.html"><li>Centrar Verticalmente</li></a>
+                <a href="display.html"><li>Display</li></a>
+                <a href="query.html"><li>Media Querys</li></a>
+                <a href="overflow.html"><li>Overflow</li></a>
+                <a href="position.html"><li>Position</li></a>
+                <a href="transition.html"><li>transition</li></a>
+                <a href="trasform.html"><li>Transform</li></a>
+            </ul>
+         </section>
+         <section class="lateral2">
+             <h3>Centrar Texto Horizontalmente</h3>
+             <p>En los tiempos en que las webs se hacían con tablas, esto era sencillo gracias a la propiedad vertical-align de las mismas; pero con la aparición de las capas (Divs) y desaparición de las tablas esta propiedad murió.</p> <br>
+             <h4>Método con flexbox "más moderno y recomendado"</h4>
+             <p>Este método es el más recomendado y fácil de implementar, basta con asignar al padre de nuestro html el siguiente código CSS:</p>
+             <div class="code">
+                 <span class="verde">.padre</span><span>&#123;</span><br>
+                 <span class="blue">display: </span><span class="morado">flex</span><span>;</span><br>
+                 <span class="blue">justify-content: </span><span class="morado">center</span><span>;</span><br>
+                 <span class="blue">aling-items: </span><span class="morado">center</span><span>;</span><br>
+                 <span>&#125;</span>
+             </div>
+             <p>Con la propiedad justify-content: center hacemos que se centre horizontalmente, mientras que con align-items: center hacemos lo propio verticalmente. Cabe resaltar que estas propiedades sólo aplican en caso que el padre sea de mayor tamaño que el hijo. De hecho, si queremos que el hijo esté centrado en toda la pantalla deberemos asignarle esas dimensiones al padre</p><br>
+             <h4>Metodo del alto de linea "Line-height"</h4>
+             <p>Aunque es un método que sólo funciona con una línea de texto, puede ser útil para mostrar, por ejemplo, nuestro último tweet (muy de moda) en una única línea. <br>
+             La forma de implementarlo sería la siguiente:</p>
+             <div class="code">
+                 <span class="verde">.hijo</span><span>&#123;</span>
+             </div>
+         </section>
+    </div>
+    <footer></footer>
+</body>
+</html>
