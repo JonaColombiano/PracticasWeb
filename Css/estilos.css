@@ -8,6 +8,7 @@
 .centrartext{    
 text-align: center;
 }
+
 .quitHiper{
     text-decoration: none;
     color: white;
@@ -231,16 +232,18 @@ footer{
     border-radius: 5px;
     
 }
+
 .verde{
     color: lawngreen;
 }
+
 .blue{
     color: deepskyblue;
 }
+
 .morado{
     color:mediumpurple;
 }
-
 .caja{
     margin: auto;
     width: 300px;
@@ -249,6 +252,42 @@ footer{
     box-shadow: 1px 3px 5px 0px;
     border-radius: 10px;
     text-align: center;
+
+}
+
+.cajatext{
+    margin:auto;
+    width: 300px;
+    height: 100px;
+    background-color: silver;
+    line-height: 100px;
+    text-align: center;
+}
+.metodotable {
+    margin: auto;
+    background-color: gray;
+	display: table;
+	height:200px;
+    
+}
+
+.tablecell {
+	display: table-cell;
+	vertical-align: middle;
+    margin: auto;
+    border: 1px solid;
+}
+
+.cajarelative{
+    position: relative;
+    margin: auto;
+    width: 300px;
+    height: 200px;
+    background-color: silver;
+}
+
+.vinetas{
+    line-height: 25px;
 }
 /*Css Javascript*/
 .Hfondo{

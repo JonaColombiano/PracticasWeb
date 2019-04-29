@@ -51,8 +51,63 @@
              <p>Aunque es un método que sólo funciona con una línea de texto, puede ser útil para mostrar, por ejemplo, nuestro último tweet (muy de moda) en una única línea. <br>
              La forma de implementarlo sería la siguiente:</p>
              <div class="code">
-                 <span class="verde">.hijo</span><span>&#123;</span>
+                 <span class="verde">.hijo</span><span>&#123;</span><br>
+                 <span class="blue">line-height: </span> <span class="morado">200px</span><span>;</span><br>
+                 <span>&#125;</span>
              </div>
+             <h5>Resultado</h5>
+             <div class="cajatext">
+                 texto centrado
+             </div>
+             <br>
+             <h4>El método de la tabla CSS "CSS Table method"</h4>
+             <p>Comentaba al principio de la entrada sobre el tiempo de las tablas y el              posicionamiento vertical con vertical-align.Este método se basa en eso, pero sin hacerlo con tablas como tal. <br><br>
+
+            Lo que hacemos es tratar, mediante CSS, a una serie de capas como tablas HTML o celdas de tabla; con esto lograremos que el navegador vea dichas divs como tablas y podamos utilizar la propiedad vertical-align sobre ellas. <br><br>
+
+            Debemos tener clara la idea de que las tablas CSS no son lo mismo que las tablas HTML.
+
+            La implementación sería así<br><br></p>
+            <div class="code">
+                <span class="verde">.padre</span><span>&#123;</span><br>
+                <span class="blue">display: </span><span class="morado">table</span><span>;</span><br>
+                <span class="blue">height </span><span class="morado">200px</span><span>;</span><br>
+                <span>&#125;</span><br><br>
+                <span class="verde">.hijo</span><span>&#123;</span><br>
+                <span class="blue">display: </span><span class="morado">table-cell</span><span>;</span><br>
+                <span class="blue">vertical-aling </span><span class="morado">middle</span><span>;</span><br>
+                <span>&#123;</span>
+            </div>
+            <p>La explicación es más o menos lo que expliqué arriba; le otorgamos a la capa padre la propiedad display:table y a la capa hijo display:table-cell. Esto hará que la capa padre sea interpretada por el navegador como una tabla y la capa hijo como una celda de tabla.
+            <br><br>
+            A su vez, la capa hijo tendrá un vertical-align: middle para que se produzca el alineado vertical. <br><br> También tenemos en cuenta que en esta ocasión el alto de la capa va en el elemento padre.
+            <br><br>
+            Me gustaría advertir que este método no funciona por sí mismo en versiones antiguas de Internet Explorer, por lo que hay que «forzarlo» añadiendo un display:inline-block al elemento hijo.
+            <br>
+            </p>
+            <div class="metodotable">
+               <div class="tablecell">
+                   <p>Texto centrado</p>
+               </div>
+            </div>
+            <br><br>
+            <h4>Centrado con Transform a un elemento absoluto</h4>
+            <p></p>
+            <div class="code">
+                <span class="verde">.centrado</span><span>>&#123;</span><br>
+                <span class="blue">position: </span><span class="morado">absolute</span><span>;</span><br>
+                <span class="blue">top: </span><span class="morado">50%</span><span>;</span><br>
+                <span class="blue">left: </span><span class="morado">50%</span><span>;</span><br>
+                <span class="blue">transform: </span><span class="morado">traslate&#123;-50%, -50%&#125;</span><span>;</span><br>
+                <span>&#125;</span>
+            </div>
+            <div class="cajarelative">
+                <div class="centrado">
+                    <p style="color:black;">Texto centrado</p>
+                </div>
+            </div>
+            <br><br>
+            <h3>Para ver mas mezclas ingresar <a class ="blue" href="https://www.dariobf.com/centrar-verticalmente-con-css-6-formas-diferentes-de-lograrlo/"> aqui</a></h3>
          </section>
     </div>
     <footer></footer>

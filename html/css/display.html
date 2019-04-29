@@ -16,7 +16,7 @@
                 </ul>
            </nav>
             <div class="Hcontenedor">
-               <img src="../Imagenes/logocss.png" alt="" class="logo"> <span><h1 class="Titulo">CSS3</h1></span>
+               <img src="../../Imagenes/logocss.png" alt="" class="logo"> <span><h1 class="Titulo">CSS3</h1></span>
             </div>
     </header>
     <section class="main">
@@ -36,6 +36,57 @@
             </ul>
         </div>
         <section class="lateral2">
+        <h2>Display</h2>
+        <p>display es la propiedad más importante para controlar estructuras. Cada elemento tiene un valor de display por defecto dependiendo de qué tipo de elemento sea. El valor por defecto para la mayoría de los elementos es usualmente block (de bloque) o inline (en línea). Un elemento que es block es comunmente llamado elemento block-level. Un elemento inline siempre es llamado elemento inline.</p>
+        <br>
+        <h4>Display: None</h4>
+        <p>Es la forma más simple que presenta esta propiedad, en la que se indica al elemento que no genere ninguna caja, con lo que el elemento simplemente desaparece.
+        <br><br>
+        Como consecuencia de ello, el elemento deja de ocupar un espacio en la presentación del documento, por lo que los elementos adyacentes simplemente ignoran su presencia y ocupan su espacio.</p>
+        <br><br>
+        <h4>Display: Block</h4>
+        <p>Cuando un elemento es marcado con este valor de la propiedad “display”, el mismo se comporta como bloque. Este comportamiento como bloque quiere decir que:</p>
+        <br>
+        <ul class="vinetas">
+            <li>El elemento no permitirá la ubicación de elementos adyacentes.</li>
+            <li>En caso de que sus dimensiones no sean determinadas, ocupará todo el ancho disponible dentro del elemento contenedor, y tendrá una altura que será determinada por el contenido.</li>
+            <li>Cuando se determina el ancho, el elemento ocupará solo la extensión determinada, pero sin permitir la ubicación de elementos adyacentes, aún cuando haya espacio suficiente para que se ubique en él otro elemento.</li>
+        </ul>
+        <br>
+        <h5>Ejemplo;</h5>
+        <section style="background-color: cadetblue">
+            <p class="centrartext">Elemento block</p>
+        </section>
+        <br>
+        <h4>Display: inline-block</h4>
+        <p>Los elementos que tienen en su propiedad “display” este valor, tienen parte del comportamiento de los valores “inline” y “block”.
+        <br>
+        Se comportan como si se tratara de elementos de bloque, pero que permiten la presencia de elementos adyacentes, lo que es propio de los elementos en línea. Las características de estos elementos son:</p>
+        <br>
+        <ul class="vinetas">
+            <li>Permiten elementos adyacentes, como si se tratara de elementos en línea.</li>
+            <li>Pueden determinarse sus dimensiones, como los elementos de bloque.</li>
+            <li>Cuando no se determina su extensión, ocupan todo el espacio disponible, como sucede con los elementos de bloque.</li>
+            <li>La posición que ocupan estos elementos, es similar a los elementos en línea, lo que quiere decir que la parte inferior del elemento se apoyará en la base de la línea.</li>
+        </ul>
+        <br>
+        <div class="caja" style="width: 100px; display: inline-block;">
+            <p class="centrartext">caja 1</p>
+        </div>
+        <div class="caja" style="width: 100px; display: inline-block;">
+            <p class="centrartext">caja 2</p>
+        </div>
+        <div class="caja" style="width: 100px; display: inline-block;">
+            <p class="centrartext">caja 3</p>
+        </div>
+        <br><br><br>
+        <h4>Display: Flex</h4>
+        <p>Es uno de los valores más modernos de esta propiedad y también más potentes. Puede que al principio cueste un poco entenderlo, pero una vez lo hagas no dejarás de usarlo.</p>
+        <p>Para usar Flexbox, tienes que definir un contenedor padre con la propiedad display: flex. Y a partir de ahí, los contenedores hijos podrán usar propiedades de flexbox para adaptarse a lo que necesites.</p>
+        <p>Si sabes un poco de ingles, te recomiendo la guía de Flexbox de CSS-tricks. Y como la mejor forma de aprender es practicar, intenta hacer estos ejercicios de display flex.</p>
+        <p>Una cosa importante sobre flex. Hay dos especificaciones distintas que son soportadas cada una por diferentes navegadores, lo que significa que pude complicarse un poco usar Flexbox y que funcione bien en la mayoría de navegadores posibles. Mi recomendación es que uses un generador de código en este caso, como Flexy Boxes.</p>
+        <br><br>
+        <h3>Para ver mas mezclas ingresar <a class ="blue" href="https://www.lawebera.es/xhtml-css/css-avanzado-propiedad-display.php"> aqui</a></h3>
         </section>
     </section>
     <footer>
