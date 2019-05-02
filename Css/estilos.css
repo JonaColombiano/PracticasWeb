@@ -359,7 +359,7 @@ footer{
 
 
 @media (max-width:600px){
-    .cajarelative{
+    .cajatext{
         background-color: red;
     }
 }
