@@ -244,6 +244,19 @@ footer{
 .morado{
     color:mediumpurple;
 }
+
+.amarillo{
+    color:yellow;
+}
+
+.rojo{   
+    color: red;
+}
+
+.naranja{
+    color: orange;
+}
+
 .caja{
     margin: auto;
     width: 300px;
@@ -342,6 +355,13 @@ footer{
     position: absolute;
     color:white;
     z-index: 1;
+}
+
+
+@media (max-width:600px){
+    .cajarelative{
+        background-color: red;
+    }
 }
 
 

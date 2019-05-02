@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Media Query</title>
+    <link rel="stylesheet" href="../../Css/estilos.css">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0 maximun-scale=1.0, minimun-scale=1.0">
+</head>
+<body>
+    <header class="Hfondo" style="background-color: rgba(255, 211, 42,.85)">
+            <nav>
+                <ul class="indice">
+                   <li class="indice"><a href="../../index.html" class="quitHiper">Inicio</a></li>
+                    <li class="indice"> <a href="../CSS3.html" class="quitHiper">CSS3</a> </li>
+                    <li class="indice"> <a href="../Boostrap.html" class="quitHiper">Boostrap</a> </li>
+                    <li class="indice"> <a href="../javascript.html" class="quitHiper">Javascript</a> </li>
+                </ul>
+           </nav>
+            <div class="Hcontenedor">
+               <img src="../../Imagenes/logocss.png" alt="" class="logo"> <span><h1 class="Titulo">CSS3</h1></span>
+            </div>
+    </header>
+    <div class="main">
+        <section class="lateral">
+            <ul>
+                <h2>Categorias</h2>
+                <a href="backgroundblend.html"><li>Backgraund-blend-mode</li></a>
+                <a href="boxshadow.html"><li>Box-shadow</li></a>
+                <a href="CtrHorizontal.html"><li>Centrar Horizonalmete</li></a>
+                <a href="CtrVertical.html"><li>Centrar Verticalmente</li></a>
+                <a href="display.html"><li>Display</li></a>
+                <a href="query.html"><li>Media Querys</li></a>
+                <a href="overflow.html"><li>Overflow</li></a>
+                <a href="position.html"><li>Position</li></a>
+                <a href="transition.html"><li>transition</li></a>
+                <a href="trasform.html"><li>Transform</li></a>
+            </ul>
+         </section>
+         <section class="lateral2">
+             <h2>Media Query</h2>
+             <p>Las media queries (en español "consultas de medios") son útiles cuando deseas modificar tu página web o aplicación en función del tipo de dispositivo (como una impresora o una pantalla) o de características y parámetros específicos (como la resolución de la pantalla o el ancho del viewport del navegador).</p>
+             <p>Se utilizan para:</p>
+             <ul>
+                 <li>Aplicar estilos condicionales con las reglas-at @media e @import de CSS</li>
+                 <li>Indicar medios específicos en los elementos <link>, <source> y otros elementos HTML.</li>
+                 <li>Testear y monitorizar los estados de los medios usando los métodos de javascript Window.matchMedia() y MediaQueryList.addListener().</li>
+             </ul>
+             <p>Las media queries consisten de un tipo de medio opcional y una o más expresiones de características de medios. Varias consultas se pueden combinar utilizando operadores lógicos. No distinguen entre mayúsculas y minúsculas.</p>
+
+             <p>El resultado de la consulta es "verdadero" cuando el tipo de medio (si se especifica) coincide con el dispositivo en el que se está mostrando el documento y todas las expresiones en el media query son "verdaderas". En este caso, se aplica los estilos correspondientes, siguiendo las reglas usuales de cascada.</p>
+
+             <p>Las consultas sobre tipos de medios desconocidos son siempre falsas.</p>
+             <div class="code">
+                 <span class="rojo">&#60;meta </span><span class="verde">name= </span><span class="amarillo">"viewport" </span><span class="verde">content= </span><span class="amarillo">""width=device-width, user-scalable=no, initial-scale=1.0 maximun-scale=1.0, minimun-scale=1.0""</span><span class="rojo">&#62;   </span><span>   //Es necesario poner este meta para definir el ancho, alto y escala del área usada por el navegador para mostrar contenido. </span>
+                 <br><br>
+                 <span class="verde">.caja</span><span>&#123;</span><br>
+                 <span class="blue">width= </span><span class="morado">500px;</span><br>
+                 <span class="blue">height= </span><span class="morado">300px;</span><br>
+                 <span class="blue">background-color= </span><span class="morado">cadeblue;</span><br>
+                 <span>&#125;</span>
+                 <br><br>
+                 <span class="naranja">@media </span><span>(</span><span class="blue">max-width=600px</span><span>){</span><br>
+                 <span class="verde">.caja</span><span>&#123;</span><br>
+                 <span class="blue">width= </span><span class="morado">50px;</span><br>
+                 <span class="blue">height= </span><span class="morado">30px;</span><br>
+                 <span class="blue">background-color= </span><span class="morado">orange;</span><br>
+                 <span>&#125;</span><br>
+                 <span>&#125;</span>
+             </div>
+                 <div class="cajarelative">
+                     cuando la pantalla mida menos de 600px <br>
+                     el color de esta caja cambiara a rojo
+                 </div>
+                  <h3>Para ver mas mezclas ingresar <a class ="blue" href="https://developer.mozilla.org/es/docs/CSS/Media_queries"> aqui</a></h3>
+         </section>
+         
+    </div>
+</body>
+</html>
