@@ -36,7 +36,43 @@
             </ul>
          </section>
          <section class="lateral2">
+             <h2>Transition</h2>
+             <p>controlando además la velocidad y en animaciones más avanzadas el modo en que se ejecuta la transición.</p>
+             <p>Por ejemplo, supongamos que tenemos un botón con un color en su estado normal y otro diferente en el hover. El pasaje entre ambos estados se produce de manera abrupta. En cambio si usamos la propiedad transition logramos que el cambio de color sea gradual.</p>
+             <p>El control de una transición incluye las siguientes propiedades:</p>
+             <br>
+             <h4>Sintaxis</h4>
+             <p>Entrando en materia, la sintaxis de esta propiedad se puede colocar de dos formas, pero si me preguntaran por la manera mas sencilla de hacerlo sería de la siguiente forma:</p>
+             <div class="code">
+                 <span class="blue">transition: </span><span class="morado">(Propiedad)(Duracion)(funcion de tiempo)(Retardo)</span><span>;</span>
+             </div>
+             <p>La segunda manera de aplicarlo es separando la declaración en cuatro diferentes propiedades y aunque suene complicado no lo es, basta con hacerlo de la siguiente manera:</p>
+             <div class="code">
+                 <span class="blue">transition-property: </span><span class="morado">Propiedad Css</span><span>;</span><br>
+                 <span class="blue">transition-duration: </span><span class="morado">Duracion en segundos</span><span>;</span><br>
+                 <span class="blue">transition-timing-function: </span><span class="morado">funcion de tiempo</span><span>;</span><br>
+                 <span class="blue">transition-delay: </span><span class="morado">Retardo</span><span>;</span><br>
+             </div>
+             <h5 style="text-indent: 50px">Propiedad CSS</h5>
+             <p>Aqui puedes colocar cualquier propiedad CSS que te imagines, ésta será la propiedad a la que se afecte. Si no te decides o si quieres que todas las propiedades se animen existe también una opción que actúa como un "comodín", lo que significa que no importa cual propiedad CSS o incluso si son dos o tres esta opción seleccionará todas las propiedades CSS solo es cuestion de colocarl la "palabra ALL."</p><br>
+             <h5 style="text-indent: 50px">Duracion</h5>
+             <p>Aquí podemos colocar el tiempo que durará nuestra animación, ¿cuánto tiempo quieres que tarde en agregar ese borde rojo?. Lo podemos colocar en unidades de segundos, cualquier cantidad de segundos que quieras.</p><br>
+             <h5 style="text-indent: 50px">Funcion de tiempo</h5>
+             <p>Aquí es un tanto extraño para muchos que no son muy adentrados en el tema de animaciones. Se trata de unas funciones que están predefinidas que permiten que avance mas rápido al inicio de la animación y mas lento al final, al revés o que dure mas tiempo en el medio de la animación.</p><br>
+             <p>Podemos colocar cualquiera de estas funciones que ya estan definidas</p>
+             <p><b>linear: </b> La animación se realiza de manera uniforme</p>
+             <p><b>ease: </b>La animación acelera al inicio se retarda un poco y se acelera al final de nuevo</p>
+             <p><b>ease-in: </b>La animación se retarda al inicio, pero lo repone al final</p>
+             <p><b>ease-out: </b>La animación se acelera al inicio pero se retarda al final</p>
+             <p><b>ease-in-out: </b> La animación se retarda al inicio se acelera un poco luego se retarda al final de nuevo.</p>
+             <h5 style="text-indent: 50px">Retardo</h5>
+             <p>Aqui colocaremos el tiempo que tardará la animación en iniciar. Lo debemos definir en unidades de segundos. Tambien hay que tener un poco de tacto y ponernos en los zapatos de nuestras visitas y no colocar demasiado tiempo.</p><br><br>
+             <h2>Ejemplo</h2>
+             <div class="cajatext2">El cambio del hover sucede suavemente</div>
+             <br><br>
+             <h3>Para ver mas ingresar <a class ="blue" href="https://www.laurachuburu.com.ar/tutoriales/transform-y-transition.php">aqui </a> y <a class ="blue" href="http://santyweb.blogspot.com/2011/07/css3-propiedad-transition-crea.html">aqui </a></h3>
          </section> 
+         
     </div>
     <footer>
         
