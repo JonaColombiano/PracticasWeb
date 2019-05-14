@@ -36,20 +36,41 @@
             </ul>
          </section>
          <section class="lateral2">
-         <h2>Transform</h2>
-         <p>La transformacion en CSS3 es un efecto que permite a un elemento cambiar de forma, tamaño o posición.</p>
-         <p>La transformación en si no es ninguna animación, sino que simplemente se muestra el elemento cambiado, sin embargo las transformaciones pueden utilizarse en animaciones y transiciones, de manera que vemos cómo el elemento cambia de forma, tamaño o posición.</p>
-         <p>Tenemos dos tipos de transformaciones, las 2D o en el plano, y las 3D o en el espacio. Comenzaremos por las transformaciones en el plano o 2D.</p>
-         <br>
-         <h4>Traslate</h4>
-         <p>El método translate cambia de posición el elemento (traslación), moviendolo hacia donde indican los parámetros.</p>
-         <p>Dentro del paréntesis pondremos dos parámetros, el primero es la traslación que se produce en horizontal, hacia la derecha, (eje X), y el segundo la traslación en vertical, hacia abajo (eje Y).</p>
-         <p>Los parámetros deben ser siempre medidas de longitud, si su valor es negativo el elemento se desplazara hacia la izquierda (primer parámetro) o hacia arriba (segundo parámetro).</p>
-         <br>
-         <div class="code">
-             
-         </div>
-         </section> 
+             <h2>Transform</h2>
+             <p>La transformacion en CSS3 es un efecto que permite a un elemento cambiar de forma, tamaño o posición.</p>
+             <p>La transformación en si no es ninguna animación, sino que simplemente se muestra el elemento cambiado, sin embargo las transformaciones pueden utilizarse en animaciones y transiciones, de manera que vemos cómo el elemento cambia de forma, tamaño o posición.</p>
+             <p>Tenemos dos tipos de transformaciones, las 2D o en el plano, y las 3D o en el espacio. Comenzaremos por las transformaciones en el plano o 2D.</p>
+             <br>
+             <h4>Traslate</h4>
+             <p>El método translate cambia de posición el elemento (traslación), moviendolo hacia donde indican los parámetros.</p>
+             <p>Dentro del paréntesis pondremos dos parámetros, el primero es la traslación que se produce en horizontal, hacia la derecha, (eje X), y el segundo la traslación en vertical, hacia abajo (eje Y).</p>
+             <p>Los parámetros deben ser siempre medidas de longitud, si su valor es negativo el elemento se desplazara hacia la izquierda (primer parámetro) o hacia arriba (segundo parámetro).</p>
+             <br>
+             <div class="code">
+                 <span class="verde">.caja</span><span>&#123;</span><br>
+                 <span class="blue">margin: </span><span class="morado">auto</span><span>;</span><br>
+                 <span class="blue">width: </span><span class="morado">300px</span><span>;</span><br>
+                 <span class="blue">height: </span><span class="morado">50px</span><span>;</span><br>
+                 <span class="blue">transform: </span><span class="morado">traslate(10px, 50px) </span><span>;</span><br>
+                 <span>&#125;</span>
+             </div>
+             <div style="width: 700px; height: 70px; margin: auto;">
+                 <div class="caja" style="display: inline-block; background-color: deepskyblue;">original </div>
+                 <div class="caja MedTransform" style="display: inline-block; background-color: deepskyblue;">Metodo traslate </div>           
+             </div><br>
+             <h4>Metodo rotate</h4>
+             <p>El método rotate gira el elemento respecto a su posición original, el ángulo de giro viene indicado en el parámetro:</p>
+             <p><i>transform: rotate(30deg);</i></p>
+             <p>El ángulo de rotación indicado en el parámetro puede indicarse en grados (deg) o en radianes (rad), veamos un ejemplo:</p>
+             <p><i>#capa2 {transform: rotate(30deg);}</i></p><br>
+             <div class="caja MedRotate" style="background-color: deepskyblue; width: 80px;">Metodo Rotate</div><br>
+             <h4>Metodo Scale</h4>
+             <p>El método scale aumenta o reduce de tamaño el elemento original (escalar). Los ejes horizontal y vertical se controlan independientemente, por lo que podemos escalarlo de distinta manera en los dos ejes. los parámetros son números que indican la proporción en la que se debe aumentar o reducir. los decimales menores que 1 reducen el tamaño.</p>
+             <p><i>transform: scale(1.2,0.8);</i></p>
+             <p>Este método utiliza dos parámetros, que son dos números, el primer número indica indica la proporción en el eje X (horizontal), y el segundo en el eje Y (vertical).</p> <br>
+             <h3>Para ver mas mezclas ingresar <a class ="blue" href="https://aprende-web.net/NT/anim/anim_5.php"> aqui</a></h3>
+         </section>
+          
     </div>
     <footer>
         
