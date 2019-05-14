@@ -115,17 +115,18 @@ footer{
 }
 
 .content:hover{
-    transform: scale(1.05);
-    -webkit-transform: scale(1.05);
-    -moz-transform:scale(1.05);
+    transform: scale(1.01);
+    -webkit-transform: scale(1.01);
+    -moz-transform:scale(1.01);
     transition: all 0.9s ease;
     -moz-transition: all 0.9s ease;
     -webkit-transition:all 0.9s ease;
-    -webkit-box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.75);
-    -moz-box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.75);
-    box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.75);
+    box-shadow: 2px 2px 15px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 2px 2px 15px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow:2px 2px 15px 0px rgba(0,0,0,0.75);
     cursor: pointer;
     overflow: inherit;
+    border-radius: 10px;
 }
 
 /*Css temario css*/
@@ -364,7 +365,7 @@ footer{
     position: absolute;
     width: 100%;
     height: 500px;
-    background: rgba(0,0,0,0.45);
+    background: rgba(0,0,0,0.75);
 }
 
 .texbanner{
