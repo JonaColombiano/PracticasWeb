@@ -1,0 +1,109 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Centrar Horizontalmente</title>
+    <link rel="stylesheet" href="../../Css/estilos.css">
+</head>
+<body>
+    <header class="Hfondo" style="background-color: rgba(255, 205, 0,.85)">
+            <nav>
+                <ul class="indice">
+                   <li class="indice"><a href="../../index.html" class="quitHiper">Inicio</a></li>
+                    <li class="indice"> <a href="../CSS3.html" class="quitHiper">CSS3</a> </li>
+                    <li class="indice"> <a href="../Boostrap.html" class="quitHiper">Boostrap</a> </li>
+                    <li class="indice"> <a href="../javascript.html" class="quitHiper">Javascript</a> </li>
+                </ul>
+           </nav>
+            <div class="Hcontenedor">
+               <img src="../../Imagenes/logocss.png" alt="" class="logo"> <span><h1 class="Titulo">CSS3</h1></span>
+            </div>
+    </header>
+    <div class="main">
+        <section class="lateral">
+            <ul>
+                <h2>Categorias</h2>
+                <a href="Animacion.html"><li>Animacion</li></a>
+                <a href="backgroundblend.html"><li>Backgraund-blend-mode</li></a>
+                <a href="boxshadow.html"><li>Box-shadow</li></a>
+                <a href="CtrHorizontal.html"><li>Centrar Horizonalmete</li></a>
+                <a href="CtrVertical.html"><li>Centrar Verticalmente</li></a>
+                <a href="display.html"><li>Display</li></a>
+                <a href="query.html"><li>Media Querys</li></a>
+                <a href="overflow.html"><li>Overflow</li></a>
+                <a href="position.html"><li>Position</li></a>
+                <a href="transition.html"><li>Transition</li></a>
+                <a href="trasform.html"><li>Transform</li></a>
+                <a href="Target.html"><li>Target</li></a>
+            </ul>
+         </section>
+         <section class="lateral2">
+             <h2>Animacion</h2>
+             <p>Para crear animaciones debemos tener dos cosas claras. Por un lado, la regla @keyframes, que incluye los fotogramas de la animación, mientras que por otro lado tenemos las propiedades CSS de las animaciones, que definen el comportamiento de la misma.</p>
+             <br>
+             <h3>Sintaxis</h3>
+             <div class="code">
+                 <span class="blue">animation: </span><span>(name) (duration) (timing-function) (delay) (iteration-count) (direction) (fill mode) (play-state);</span>
+             </div>
+             <br>
+             <h3 >Propiedades</h3>
+             <br>
+             <h4 class="sangria">animation-name</h4>
+             <p>Especifica el nombre de la regla @keyframes que describe los fotogramas de la animación.</p><br>
+             <h4 class="sangria">animation-duration</h4>
+             <p>Indica la cantidad de tiempo que la animación consume en completar su ciclo (duración).</p><br>
+             <h4 class="sangria">animation-timing-function</h4>
+             <p>Indica el ritmo de la animación, es decir, como se muestran los fotogramas de la animación, estableciendo curvas de aceleración.</p><br>
+             <h4 class="sangria">delay</h4>
+             <p>Tiempo de retardo entre el momento en que el elemento se carga y el comienzo de la secuencia de la animación.</p><br>
+             <h4 class="sangria">animation-iteration-count</h4>
+             <p>El número de veces que se repite. Podemos indicar infinite para repetir la animación indefinidamente</p><br>
+             <h4 class="sangria">animation-direction</h4>
+             <p>Indica si la animación debe retroceder hasta el fotograma de inicio al finalizar la secuencia o si debe comenzar desde el principio al llegar al final.</p><br>
+             <h4 class="sangria">animation-fill-mode</h4>
+             <p>Especifica qué valores tendrán las propiedades después de finalizar la animación (los de antes de ejecutarla, los del último fotograma de la animación o ambos).</p><br>
+             <h4 class="sangria">animation-play-state</h4>
+             <p>Permite pausar y reanudar la secuencia de la animación</p><br>
+             <h3>Fotogramas (Keyframes)</h3>
+             <p>Ya sabemos como indicar a ciertas etiquetas HTML que reproduzcan una animación, con ciertas propiedades. Sin embargo, nos falta la parte más importante: definir los fotogramas de dicha animación. Para ello utilizaremos la regla @keyframes, la cuál es muy sencilla de utilizar y se basa en el siguiente esquema:</p><br>
+             <br>
+             <div class="code">
+                 <span class="naranja">@keyframe nombre</span><span>&#123;</span><br>
+                 <span class="verde sangria">selectorkeyframe</span><span>&#123;</span><br>
+                 <span class="blue">propiedad: </span><span class="morado">valor</span><span>;</span><br>
+                 <span class="blue">propiedad: </span><span class="morado">valor</span><span>;</span><br>
+                 <span>&#125;</span><br>
+                 <span>&#125;</span>
+             </div>
+             <br>
+             <p>Una vez configurado el tiempo de la animación, necesitamos definir su apariencia. Esto lo haremos estableciendo dos fotogramas más usando la regla @keyframes. Cada fotograma describe cómo se muestra cada elemento animado en un momento dado durante la secuencia de la animación.</p>
+             <p>Desde que se define el tiempo y el ritmo de la animación, el fotograma usa percentage para indicar en qué momento de la secuencia de la animación tiene lugar. 0% es el principio, 100% es el estado final de la animación. Debemos especificar estos dos momentos para que el navegador sepa dónde debe comenzar y finalizar; debido a su importancias, estos dos momentos tienen alias especiales: from y to.</p>
+             <br>
+             <h3>Ejemplo</h3>
+             <div class="code">
+                 <span class="verde sangria">.animacion</span><span>&#123;</span><br>
+                 <span class="blue">position: </span><span class="morado">relative </span><span>;</span><br>
+                 <span class="blue">width: </span><span class="morado">120px </span><span>;</span><br>
+                 <span class="blue">heigth: </span><span class="morado">60px </span><span>;</span><br>
+                 <span class="blue">background: </span><span class="morado">#006A96 </span><span>;</span><br>
+                 <span class="blue">animation: </span><span>mover </span><span class="morado">5s linear 0s infinite alternate </span><span>;</span><br>
+                 <span>&#125;</span><br><br><br>
+                 <span class="naranja">@keyframe mover</span><span>&#123;</span><br>
+                 <span class="verde sangria">0%</span><span>&#123;</span><br>
+                 <span class="blue">left: </span><span class="morado">0px</span><span>;</span><br>
+                 <span>&#125;</span><br>
+                 <span class="verde sangria">50%</span><span>&#123;</span><br>
+                 <span class="blue">left: </span><span class="morado">45%</span><span>;</span><br>
+                 <span>&#125;</span><br>
+                 <span>&#125;</span>
+                 <span class="verde sangria">100%</span><span>&#123;</span><br>
+                 <span class="blue">left: </span><span class="morado">90%</span><span>;</span><br>
+                 <span class="blue">background: </span><span class="morado">green</span><span>;</span><br>
+                 <span>&#125;</span><br>
+             </div>
+             <br>
+             <div class="cajanimada"></div>
+         </section>
+    </div>
+    <footer></footer>
+</body>
+</html>

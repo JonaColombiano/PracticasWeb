@@ -92,7 +92,7 @@ footer{
     
     width: 100px;
     height: 100px;
-    background: #f39c12;
+    background: #182B49;
     margin: auto;
     margin-bottom: 20px;
     color:white;
@@ -129,7 +129,29 @@ footer{
     border-radius: 10px;
 }
 
+
+
+
+
+
+
+
+
 /*Css temario css*/
+.cajanimada{
+    position: relative;
+    width: 120px;
+    height: 60px;
+    background: #006A96;
+    animation: mover 3s linear 0s infinite alternate;
+}
+
+@keyframes mover{
+    0%{background: black;} 
+    50%{background: yellow;}
+    100%{left: 500px;background: green;}
+}
+
 .lateral{
     margin-top:50px;
     width: 19%;
@@ -147,17 +169,26 @@ footer{
 
 .lateral ul h2{
     text-align: center;
-    background: #f2f2f2;
+    background: #182B49;
+    color:white;
+    border-radius: 2px 2px 0px 0px;
+    padding: 5px 0px;
 }
 
 .lateral ul li{
+    position: relative;
+    background: rgb(249,249,249);
     list-style: none;
-    padding: 5px 10px;
+    padding: 8px 5px;
 }
 
 .lateral ul li:hover{
     cursor: pointer;
-    background-color:#0e8eef; 
+    color: white;
+    background-color:#006A96;
+    box-shadow: #030303 0px 5px 1px 0px;
+    -webkit-box-shadow: #030303  0px 0px 5px 1px;
+    z-index: 1;
 }
 .static{
     border: 3px solid; 
@@ -262,7 +293,8 @@ footer{
     margin: auto;
     width: 300px;
     height: 50px;
-    background: gold;
+    background: #006A96;
+    color: white;
     box-shadow: 1px 3px 5px 0px;
     border-radius: 10px;
     text-align: center;
@@ -281,7 +313,7 @@ footer{
     margin:auto;
     width: 300px;
     height: 100px;
-    background-color: silver;
+    background-color: #747678;
     line-height: 100px;
     text-align: center;
     transition: all 2s linear 0.5s;  
@@ -291,19 +323,19 @@ footer{
     margin:auto;
     width: 300px;
     height: 100px;
-    background-color: silver;
+    background-color: #747678;
     line-height: 100px;
     text-align: center;
     transition: all 2s linear 0.5s;  
 }
 
 .cajatext2:hover{
-    background-color: deepskyblue;
+    background-color: #006A96;
 }
 
 .metodotable {
     margin: auto;
-    background-color: gray;
+    background-color: #747678;
 	display: table;
 	height:200px;
     
@@ -321,7 +353,7 @@ footer{
     margin: auto;
     width: 300px;
     height: 200px;
-    background-color: silver;
+    background-color: #747678;
 }
 
 .vinetas{
@@ -382,10 +414,12 @@ footer{
     z-index: 1;
 }
 
-
+.sangria{
+    text-indent: 50px;
+}
 @media (max-width:600px){
     .cajatext{
-        background-color: red;
+        background-color: #C69214;
     }
 }
 
