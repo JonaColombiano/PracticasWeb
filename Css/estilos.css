@@ -143,13 +143,13 @@ footer{
     width: 120px;
     height: 60px;
     background: #006A96;
-    animation: mover 3s linear 0s infinite alternate;
+    animation: mover 5s linear 0s infinite alternate;
 }
 
 @keyframes mover{
-    0%{background: black;} 
-    50%{background: yellow;}
-    100%{left: 500px;background: green;}
+    0%{left: 0%;} 
+    50%{left: 45%}
+    100%{left: 90%;background: green;}
 }
 
 .lateral{
@@ -271,8 +271,13 @@ footer{
 
 .blue{
     color: deepskyblue;
+    padding-left: 30px;
 }
 
+.blue2{
+    color: deepskyblue;
+    
+}
 .morado{
     color:mediumpurple;
 }
@@ -359,6 +364,11 @@ footer{
 .vinetas{
     line-height: 25px;
 }
+
+.colortext:target{
+    background: #C69214;
+}
+
 /*Css Javascript*/
 .Hfondo{
     position: fixed;
