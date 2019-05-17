@@ -37,7 +37,7 @@ nav{
 
 .main{
     padding: 0px 11%;
-    margin-top: 4%;
+    margin-top: 110px;;
     overflow: hidden;
 }
 
@@ -130,7 +130,10 @@ footer{
 }
 
 
-
+footer{    
+    position: absolute;
+    bottom: 0px;
+}
 
 
 
@@ -153,7 +156,6 @@ footer{
 }
 
 .lateral{
-    margin-top:50px;
     width: 19%;
     height: 500px;
     float: left;
@@ -367,6 +369,30 @@ footer{
 
 .colortext:target{
     background: #C69214;
+}
+
+.min{
+    background: url(../../Imagenes/cssbanner.jpg)  no-repeat center;
+    -webkitbackground-size: cover;
+    background-size: cover;
+    width: 250px;
+    height: 150px;
+    position: relative;
+    display: inline-block;
+    Margin:10px; 
+}
+
+.min-text{
+    position: absolute;
+    color: white;
+    left: 50%;
+    top: 35%;
+    font-size: 30px;
+    text-align: center;
+}
+
+.min:hover{
+    cursor: pointer;
 }
 
 /*Css Javascript*/
