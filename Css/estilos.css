@@ -36,10 +36,12 @@ nav{
 }
 
 .main{
+    position: relative;
     padding: 0px 11%;
     margin-top: 110px;;
     overflow: hidden;
 }
+
 
 p{
     margin: 1% 0;
@@ -66,10 +68,12 @@ footer{
 }
 
 .contenido{
-    width: 100%;
+    width: 90%;
     height: 400px;
     overflow: hidden;
     margin-top: 60px;
+    margin: auto;
+    
 }
 
 .content{
@@ -78,13 +82,14 @@ footer{
     margin: auto;
     margin-top: 10px;
     padding: 10px;
+    
 }
 
 .content1{
     float: left;
-    width: 50%;
+    width: 49%;
     height: 100%;
-    margin-left: 40;
+    margin-left: 4px;
 }
 
 
@@ -130,10 +135,7 @@ footer{
 }
 
 
-footer{    
-    position: absolute;
-    bottom: 0px;
-}
+
 
 
 
@@ -146,13 +148,42 @@ footer{
     width: 120px;
     height: 60px;
     background: #006A96;
-    animation: mover 5s linear 0s infinite alternate;
+    animation: mover 20s linear 0s infinite alternate;
 }
 
 @keyframes mover{
     0%{left: 0%;} 
     50%{left: 45%}
     100%{left: 90%;background: green;}
+}
+
+.animacion{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background:  #747678;
+    animation: cajanim 10s ease 0s infinite;
+}
+
+@keyframes cajanim{
+    0%{ background: #747678; border-radius: 0px;
+    }
+    25%{ background: #182B49; 
+         border-radius: 50% 0px 0px 0px;
+         left: 900px;}
+    
+    50%{ background: #006A96;
+         border-radius: 50% 50% 0px 0px;
+         top: 300px;}
+    
+    75%{ background: #FFCD00; 
+         border-radius: 50% 50% 50% 0px;
+         right: 1050px;}
+    
+    100%{background: #C69214; 
+        border-radius: 50% 50% 50% 50%;
+      }
+
 }
 
 .lateral{
@@ -163,7 +194,7 @@ footer{
 
 .lateral2{
     margin-top: 50px;
-    float:left;
+    float: left;
     width: 80%;
     height: auto;
     padding-left: 4%;
@@ -392,7 +423,7 @@ footer{
 }
 
 .min:hover{
-    cursor: pointer;
+    
 }
 
 /*Css Javascript*/
