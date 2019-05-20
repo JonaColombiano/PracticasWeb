@@ -36,9 +36,8 @@ nav{
 }
 
 .main{
-    position: relative;
-    padding: 0px 11%;
-    margin-top: 110px;;
+    padding: 0% 11%;
+    margin-top: 110px;
     overflow: hidden;
 }
 
@@ -193,11 +192,10 @@ footer{
 }
 
 .lateral2{
-    margin-top: 50px;
     float: left;
     width: 80%;
     height: auto;
-    padding-left: 4%;
+    padding-left: 5%;
 }
 
 .lateral ul h2{
@@ -488,6 +486,16 @@ footer{
     .cajatext{
         background-color: #C69214;
     }
+}
+
+/*JAVASCRIPT*/
+button{
+    color:white;
+    width: 100px;
+    height: 30px;
+    margin: auto;
+    background-color: #007AFF;
+    border-radius: 5px;
 }
 
 

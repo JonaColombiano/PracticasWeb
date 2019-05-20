@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Javascript</title>
+    <link rel="stylesheet" href="../../Css/estilos.css">
+    <link rel="stylesheet" href="../../Css/VentanaModal.css">
+</head>
+<script>
+    function ventanamodal(){
+    
+        setTimeout(()=>{
+        document.getElementById("text").innerHTML("tesasd")
+    },5000)
+    }
+    
+</script>
+<body>
+    <header class="Hfondo">
+        <nav>
+            <ul class="indice">
+               <li class="indice"><a href="../index.html" class="quitHiper">Inicio</a></li>
+                <li class="indice"> <a href="Css3.html" class="quitHiper">CSS3</a> </li>
+                <li class="indice"> <a href="Boostrap.html" class="quitHiper">Boostrap</a> </li>
+                <li class="indice"> <a href="javascript.html" class="quitHiper">Javascript</a> </li>
+            </ul>
+       </nav>
+        <div class="Hcontenedor">
+           <img src="../../Imagenes/javascript.png" alt="" class="logo"> <span><h1 class="Titulo">Javascript</h1></span>   
+        </div>
+        
+    </header>
+    <section class="main" >
+       <h2>setTimeout</h2>
+       <p>El método setTimeout() establece un temporizador que ejecuta una función o una porción de código después de que transcurre un tiempo establecido.</p>
+       <div class="code">
+           <span class="blue">setTimeout</span><span>(funcion, tiempo en milisegundos)</span>
+       </div>
+           <p id="text"></p>
+            <button id="ventana" onclick="ventanamodal()">Ejemplo</button>
+        
+    </section>
+    
+    <footer>
+        
+    </footer>
+</body>
+</html>

@@ -1,7 +1,7 @@
 
 .modal{
-    top: -110px;
-    position: absolute;
+    top: 90px;
+    position: fixed;
     display: none;  /*Ayuda a Centrar el contenido con margin auto*/
     background-color: rgba(0,0,0,0.5);
     width: 100%;
@@ -61,3 +61,10 @@ a{
 .modal:target{
     display: flex;
 }
+
+
+
+/*Ventana modal JAVASCRIPT*/
+
+
+
