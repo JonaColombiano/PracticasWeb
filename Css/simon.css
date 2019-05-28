@@ -1,0 +1,64 @@
+body{
+    margin: 0;
+    box-sizing: content-box;
+}
+
+.fondo{
+    background: #1d1d1d;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.row{
+    display: flex;
+    justify-content: center;
+}
+
+.row .last{
+    margin-left: -110px;
+}
+
+
+
+.letra{
+   color:white;
+    animation: apper 5s;
+    font-size: 24px;
+    border: 2px solid white;
+    border-radius: 10px;
+    min-width: 80px;
+    padding: 36px 10px;
+    margin: 10px;
+    text-align: center;
+    transition: all ease 0.5s;
+}
+
+.letra.active{
+    background-color: white;
+    color: black;
+}
+
+.letra.active.sucess{
+    background-color: #22cc71;
+    color: white;
+    border-color: #2ecc71;
+}
+
+.key.active.fail{
+    background-color: #e74c3c;
+    color:white;
+    border-color: #e74c3c;
+}
+@keyframes apper{
+    0%{
+        color: black;
+        border-color: black;
+    }
+    100%{
+        color:white;
+        border-color: white;
+    }
+}
