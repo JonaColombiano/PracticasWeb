@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <title>Javascript</title>
     <link rel="stylesheet" href="../../Css/estilos.css">
-    <link rel="stylesheet" href="../../Css/VentanaModal.css">
 </head>
 
 <body>
@@ -23,29 +22,22 @@
         </div>
 
     </header>
-    <div class="modal" id="abrir">
-        <div class="contenido2">
-               <div class="menucerrar">
-               Ventana modal
-               </div>  
-                <p id="tiempo">Esta ventana se cerrara en 5 segundos</p>          
-        </div>
-    </div>
+
     <section class="main" >
-  <div class="lateral" style="color: black;">
+      <div class="lateral">
           <ul>
               <a href="setInterval.html"><li>setInterval</li></a>
               <a href="setTimeout.html"><li>setTimeout</li></a>
           </ul>
       </div>
       <div class="lateral2">
-          <h2>setTimeout</h2>
-           <p>El método setTimeout() establece un temporizador que ejecuta una función o una porción de código después de que transcurre un tiempo establecido.</p>
+          <h2>setInterval</h2>
+           <p>Ejecuta una función o un fragmento de código de forma repetitiva cada vez que termina el periodo de tiempo determinado. Es decir, cada que pasa determinado tiempo ejecuta la funcion dentro del setInterval en este caso ejecutara el codigo cada segundo</p>
            <div class="code">
-               <span class="blue">setTimeout</span><span>(funcion que ejecutara al finalizar el tiempo, tiempo en milisegundos)</span>
+               <span class="blue">setInterval</span><span>(funcion que estara ejecutando, tiempo en milisegundos)</span>
            </div>
            <p id="text"></p>
-           <center><button class="boton" id="boton">Abrir Modal</button></center>
+          
       </div>
        
         
@@ -57,11 +49,13 @@
        <script>
        let modal = document.getElementById("abrir")
        let boton = document.getElementById("boton")
+       let texto = document.getElementById("text")
        
-       boton.addEventListener('click', function Vmodal(){
-           modal.style.display="flex"
-           setTimeout(()=>{ modal.style.display="none";},5000) 
-          } )
+       window.addEventListener('load', function (){
+           let x=0
+           setInterval(()=>{x++
+               texto.textContent="LLevas en esta pagina " +x+ " segundos"},1000)} 
+                      )
     </script>
 </body>
 </html>

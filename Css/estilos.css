@@ -59,6 +59,8 @@ footer{
     height: 300px;
     color: white;
     margin-top: 30px;
+    position: relative;
+    bottom: 0px;
 
 }
 /*Css CSS3*/
@@ -489,13 +491,14 @@ footer{
 }
 
 /*JAVASCRIPT*/
-button{
+.boton{
     color:white;
     width: 100px;
     height: 30px;
-    margin: auto;
     background-color: #007AFF;
     border-radius: 5px;
+    margin: auto;
+    align-content: center;
 }
 
 
