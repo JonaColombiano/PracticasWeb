@@ -47,7 +47,7 @@ body{
     border-color: #2ecc71;
 }
 
-.key.active.fail{
+.letra.active.fail{
     background-color: #e74c3c;
     color:white;
     border-color: #e74c3c;
