@@ -15,16 +15,19 @@ text-align: center;
     font-weight: 1000;
 }
  
-.indice{
+.indice {
     display: inline-block;
     padding-left: 20px;
     padding-right: 20px;
     color: white;
 }
+
+
+
 nav{
     position: absolute;
     top: 15px;
-    right: 3%;;
+    right: 3%;
 }
 .centrado{
     position: absolute;
@@ -63,6 +66,13 @@ footer{
     bottom: 0px;
 
 }
+
+
+
+
+
+
+
 /*Css CSS3*/
 .Pendientes{
     color: red;
@@ -134,7 +144,6 @@ footer{
     overflow: inherit;
     border-radius: 10px;
 }
-
 
 
 
@@ -403,7 +412,7 @@ footer{
 }
 
 .min{
-    background: url(../../Imagenes/cssbanner.jpg)  no-repeat center;
+    background: url(../Imagenes/cssbanner.png)  no-repeat center;
     -webkitbackground-size: cover;
     background-size: cover;
     width: 250px;
@@ -422,9 +431,7 @@ footer{
     text-align: center;
 }
 
-.min:hover{
-    
-}
+
 
 /*Css Javascript*/
 .Hfondo{
