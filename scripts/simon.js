@@ -1,4 +1,5 @@
-const niveles = 15
+
+let niveles = 15
 let key = generarTeclas(niveles)
 
 function generarTeclas(niveles){
