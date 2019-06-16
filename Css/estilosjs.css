@@ -1,4 +1,5 @@
-#cajasoltar{
+/*Drag and Drop*/
+.cajasoltar{
     float:left;
     width: 500px;
     height: 300px;
@@ -16,4 +17,8 @@
 #cajaimagenes > img {
     float: left;
     padding: 5px;
+}
+
+#drag2{
+    clear: both;
 }
