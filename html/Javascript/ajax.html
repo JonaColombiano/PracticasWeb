@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ajax</title>
+    <link rel="stylesheet" href="../../Css/estilos.css">
+</head>
+<body>
+     <header class="Hfondo">
+        <nav>
+            <ul class="indice">
+               <li class="indice"><a href="../index.html" class="quitHiper">Inicio</a></li>
+                <li class="indice"> <a href="Css3.html" class="quitHiper">CSS3</a> </li>
+                <li class="indice"> <a href="Boostrap.html" class="quitHiper">Boostrap</a> </li>
+                <li class="indice"> <a href="javascript.html" class="quitHiper">Javascript</a> </li>
+            </ul>
+       </nav>
+        <div class="Hcontenedor">
+           <img src="../Imagenes/javascript.png" alt="" class="logo"> <span><h1 class="Titulo">Javascript</h1></span>   
+        </div>
+    </header>
+    <section class="main">
+        <div class="lateral" style="color: black;">
+          <ul>
+              <a href="setInterval.html"><li>setInterval</li></a>
+              <a href="setTimeout.html"><li>setTimeout</li></a>
+              <li style="pointer-events: none;"><H3>API'S</H3></li>
+              <ul>
+                  <a href="canvas.html"><li style="padding-left: 30px;">Canvas</li></a>
+                  <a href="geolocalizacion.html"><li style="padding-left: 30px;">Geolocalización</li></a>
+                  <a href="indexed.html"><li style="padding-left: 30px;">IndexedDB</li></a>
+                  <a href="apifile.html"><li style="padding-left: 30px;">API File</li></a>
+                  <a href="drag.html"><li style="padding-left: 30px;">Drag And Drop</li></a>
+                  <a href="ajax.html"><li style="padding-left: 30px;">AJAX</li></a>
+                  <a href="webworkers.html"><li style="padding-left: 30px;">Web Workets</li></a>
+
+                  
+              </ul>
+          </ul>
+        </div>
+        <div class="lateral2">
+            <h2>AJAX</h2>
+            <p>
+            JavaScript Asíncrono + XML (AJAX) no es una tecnología por sí misma, es un término que describe un nuevo modo de utilizar conjuntamente varias tecnologías existentes. Esto incluye: HTML o XHTML, CSS, JavaScript, DOM, XML, XSLT, y lo más importante, el objeto XMLHttpRequest. Cuando estas tecnologías se combinan en un modelo AJAX, es posible lograr aplicaciones web capaces de actualizarse continuamente sin tener que volver a cargar la página completa. Esto crea aplicaciones más rápidas y con mejor respuesta a las acciones del usuario.
+            </p><br>
+            <h3>Elementos</h3>
+            <p><b>XMLHttpRequest():</b>Este constructor retorna un objeto XMLHttpRequest por medio del cual podemos comenzar una solicitud y escuchar eventos para controlar el proceso de cominicacion
+            </p>
+            <p>
+                <b>open(metodo, url, asicrono):</b>el metodo configura la solicitud pendiente. El atributo metódo declar el tipo de metodo HTTP usado para abri la conexion (GET o POST). El atributo url declara la ubicación del código que va a procesar la solicitud. Y asincrono es un valor booleano para declarar si la conexion sera sincrona(false) o asincrona(true). De ser necesario el metódo puede incluir valoeres especificando el nombre de usuario y clave.
+            </p>
+            <p>
+                <b>send(): </b> este es el metódo que inicia la solicitud. Existen varias versiones de este metodo en un objeto XMLHttpRequest para procesar diferentes tipos de datos. El atributo datos puede ser omitido, declarado como un ArrayBuffer, un blob, un documento, una cadena de texto, o como un FormData
+            </p>
+            <p>
+                <b>abort():</b> Este metodo cancela la solicitud
+            </p>
+            <br>
+            <h3>Eventos</h3>
+            <p>
+                <b>loadstrat:</b> Este evento es disparado cuando la solicitud comienza
+            </p>
+            <p>
+                <b>progress:</b> Este evento se envia periodicamente mienstras se evia o descargan datos
+            </p>
+                <p>
+                <b>abort:</b> Este evento es disparado cuando la solicitud es abortada
+            </p>
+            <p>
+                <b>error:</b> Este evento es disparado cuando ocurre un error en la solicitud
+            </p>
+            <p>
+                <b>load</b> Este envento es disparado cando la solicitud ha sido completada
+            </p>
+            <p>
+                <b>loadend:</b> Este evento es disparado cuando la solicitud ha sido completada (sin considerar si el proceso fue exitoso o no)
+            </p>
+        </div>
+    </section>
+    <footer>
+        
+    </footer>
+</body>
+</html>

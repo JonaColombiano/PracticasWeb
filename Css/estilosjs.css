@@ -22,3 +22,18 @@
 #drag2{
     clear: both;
 }
+
+/*Practica Ajax*/
+#cajaformulario{
+    float: left;
+    padding: 20px;
+    border: 1px solid #999999;
+}
+
+#cajadatos{
+    float:left;
+    width: 500px;
+    margin-left: 20px;
+    padding: 20px;
+    border: 1px solid #999999;
+}
