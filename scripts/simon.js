@@ -80,3 +80,4 @@ function active(keyCode, opts={}){
 function desactive (el){
     el.className = 'letra'
 }
+

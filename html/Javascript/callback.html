@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>callback</title>
+    <link rel="stylesheet" href="../../Css/estilos.css">
+</head>
+<body>
+    <header class="Hfondo">
+        <nav>
+            <ul class="indice">
+                   <li class="indice"><a href="../../index.html" class="quitHiper">Inicio</a></li>
+                    <li class="indice"> <a href="../CSS3.html" class="quitHiper">CSS3</a> </li>
+                    <li class="indice"> <a href="../Boostrap.html" class="quitHiper">Boostrap</a> </li>
+                    <li class="indice"> <a href="../javascript.html" class="quitHiper">Javascript</a> </li>>
+            </ul>
+       </nav>
+        <div class="Hcontenedor">
+           <img src="../../Imagenes/javascript.png" alt="" class="logo"> <span><h1 class="Titulo">Javascript</h1></span>   
+        </div>
+    </header>
+    <section class="main">
+        <div class="lateral">
+            <ul>
+                 <a href="arrowfunction.html"><li>ArrowFunction</li></a>
+                  <a href="callback.html"><li>CallBack</li></a>
+                  <a href="Iteradores.html"><li>Iteradores</li></a>
+                  <a href="setInterval.html"><li>setInterval</li></a>
+                  <a href="setTimeout.html"><li>setTimeout</li></a>
+                  <a href="Promesas.html"><li>Promesas</li></a>
+            </ul>
+        </div>
+        <div class="lateral2">
+            <h2>CallBack</h2>
+            <p>En español, vendría ser la llamada de vuelta. En nuestro idioma, es pasar una función como parámetro para que dicha función se encargue de ejecutar nuestro parámetro. Posiblemente, tu vengas programando todo como lo haces en C#, PHP, Java y haces que tu función/método retorne algo para realizar la acción. Es lo que comunmente hacemos.</p>
+            <br>
+            <div class="code">
+                <span class="rojo">function </span><span class="naranja">hagoAlgo</span><span>(){</span><br>
+                <span class="rojo">return </span><span class="amarillo">'Hola Jonathan'</span><br>
+                <span>}</span>
+                <br><br>
+                <span>console.</span><span class="blue2">log</span><span>(hagoAlgo)</span>
+            </div>
+            <br>
+            <p>En callback hacemos algo similar, solo que pasámos una función como parámetro, y ese algo que queremos que haga lo ejecutar la función que recibe nuestro parámetro. ¿Medio confuso no?</p>
+            <br>
+            <h3>¿Un ejemplo de callback?</h3>
+            <p>Mucho de ustedes son jQueryanos, incluyéndome. Veamos un ejemplo simple, cuando hemos usado el API de jQuery para hacer peticiones XHR (Ajax), esperamos el resultado como parámetro de una función.</p> <br>
+            <div class="code">
+                <span>$.post(</span><span class="amarillo">'algun-lugar-de-mi-web.html'</span><span>,</span><span class="rojo"> function </span><span>(</span><span class="naranja">r</span><span>)</span><span>{</span><br>
+                <span>console.</span><span class="blue2">log</span><span>(</span><span class="naranja">r</span><span>)</span><br>
+                <span>}, </span><span class="amarillo">'json'</span><span>)</span>
+            </div>
+            <br>
+            <p>Si se dan cuenta, la variable "r", es la respuesta que va a retornar el servidor. Eso es un callback, le hemos pasado al $.post una función que se va a ejecutar internamente, donde esta nos va a setear dicha variable "r" con la respuesta que va a imprimir el servidor.</p>
+            <br>
+            <h3>¿Estamos hablando Chino?</h3>
+            <p>Si, puede parecer un poco complejo, a mi por lo menos me mareó al comienzo. Así que comencemos con un ejemplo bastante sencillo.</p>
+            <br>
+            <div class="code">
+                <span class="rojo">function </span><span class="naranja">hagoAlgo</span><span>(<span class="naranja">callback</span>){</span><br>
+                <span>callback()</span><br>
+                <span>}</span><br><br>
+                <span>hacerAlgo(</span><span class="rojo">function </span><span>(){</span><br>
+                <span>console.</span><span class="blue2">log</span><span>(<span class="amarillo">'Hola Jonathan'</span>)</span><br>
+                <span>})</span>
+            </div>
+            <br>
+            <p>Lo que he hecho es declarar una función llamada hagoAlgo, esta va a recibir como parámetro otra función. Dicho esto, el parámetro será ejecutado dentro de hagoAlgo.</p><br>
+            <h3>Otro ejemplo pasándole un parámetro, a nuestro parámetro de hagoAlgo();</h3><br>
+            <div class="code">
+                 <span class="rojo">function </span><span class="naranja">hagoAlgo</span><span>(<span class="naranja">callback</span>){</span><br>
+                <span>callback(<span class="amarillo">'Hola Jonathan'</span>)</span><br>
+                <span>}</span><br><br>
+                <span>hacerAlgo(</span><span class="rojo">function </span><span>(<span class="naranja">ValorQueMeSetearon</span>){</span><br>
+                <span>console.</span><span class="blue2">log</span><span>(ValorQueMeSetearon)</span><br>
+                <span>})</span>
+            </div>
+            <p>Es parecido al anterior solo que dentro de hagoAlgo() estamos seteando el valor. Entonces cuando llamemos a nuestra función hagoAlgo y declaremos la función que va a recibir como parámetro, vamos a declarar al variable que va a ser retornada, dicha variable va a ser seteada dentro de la función hagoAlgo.</p>
+        </div>
+    </section>
+    <footer>
+        
+    </footer>
+</body>
+</html>

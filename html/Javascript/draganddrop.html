@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Drag and Drop</title>
+    <link rel="stylesheet" href="../../Css/estilosjs.css">
+    <link rel="stylesheet" href="../../Css/estilos.css">
+</head>
+<body>
+    <header class="Hfondo">
+        <nav>
+            <ul class="indice">
+                   <li class="indice"><a href="../../index.html" class="quitHiper">Inicio</a></li>
+                    <li class="indice"> <a href="../CSS3.html" class="quitHiper">CSS3</a> </li>
+                    <li class="indice"> <a href="../Boostrap.html" class="quitHiper">Boostrap</a> </li>
+                    <li class="indice"> <a href="../javascript.html" class="quitHiper">Javascript</a> </li>
+            </ul>
+       </nav>
+        <div class="Hcontenedor">
+           <img src="../../Imagenes/javascript.png" alt="" class="logo"> <span><h1 class="Titulo">Javascript</h1></span>   
+        </div>
+    </header>
+    
+    <div class="main">
+    <h2>Drag And Drop</h2><br>
+    <h3>Dragstart y drop</h3>
+    <p>En esta practica solo se usaron los eventos de dragstart y drop para arrastrar la imagen en el contenedor de la izquierda</p>
+    <section class="cajasoltar" id="cajasoltar">
+        <h3>Arrastra y mueve la imagen aqui</h3>        
+    </section>
+    <section id="cajaimagenes">
+        <img src="https://mobile-cdn.123rf.com/300wm/nexusplexus/nexusplexus1308/nexusplexus130802417/21334192-imagen-de-la-noche-mar-tormentoso-con-grandes-olas-y-los-rayos.jpg?ver=6" id="imagen">
+    </section>
+     <br><br>
+    <section id="drag2">
+        <h3>Dragenter, dragleave y dragend</h3>
+        <p>En esta practica se agregaron mas eventos del API, estos eventos realzan lo siguiente:</p>
+        <br>
+        <p><b>Dragenter:</b>se ejecuta cuando se colocala imagen sobre la caja, en el ejemplo de abajo cambia de color a verde</p> 
+        <p><b>Dragleave:</b>se ejecuta cuando la imagen sale de la caja, quita el fondo verde</p> 
+        <p><b>Dragend:</b> se ejecuta una vez terminado el proceso, en este caso oculta la imagen</p> 
+     </section>
+    <section class="cajasoltar" id="cajasoltar2">
+        <h3>Arrastra y mueve la imagen aqui</h3>        
+    </section>
+    <section id="cajaimagenes">
+        <img src="https://mobile-cdn.123rf.com/300wm/nexusplexus/nexusplexus1308/nexusplexus130802417/21334192-imagen-de-la-noche-mar-tormentoso-con-grandes-olas-y-los-rayos.jpg?ver=6" id="imagen2">
+    </section>
+    </div>
+    
+    
+    <footer>
+        
+    </footer>
+    <script src="../../scripts/DragAndDrop.js"></script>
+</body>
+</html>
